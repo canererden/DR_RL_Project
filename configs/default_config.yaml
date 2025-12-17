@@ -1,0 +1,26 @@
+
+# DR-RL Hyperparameters based on Methodology Section 4
+model:
+  d_model: 512
+  n_heads: 8
+  n_layers: 6
+  d_ff: 2048
+  dropout: 0.1
+  max_len: 1024
+
+low_rank:
+  r_min: 16
+  r_max: 64
+  segment_length: 128  # Update rank every T tokens (Sec 4.5)
+
+rl:
+  alpha: 1.0   # Weight for Fidelity (Cosine Sim) - Eq. 12
+  beta: 0.05   # Weight for FLOPs penalty - Eq. 12
+  gamma: 0.1   # Weight for Perturbation penalty - Eq. 12
+  epsilon_start: 0.1
+  epsilon_decay: 0.995 # Eq. 10
+  
+training:
+  batch_size: 32
+  lr: 5e-5
+  steps: 300000

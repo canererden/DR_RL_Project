@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+.conda/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+
+# Logs and caches
+logs/
+*.log
+.cache/
+.pytest_cache/
+
+# Data and artifacts
+data/
+results/checkpoints/
+*.pth
+
+# LaTeX and figures (keep tables/figures under results)
+# Keep results/figures and results/tables tracked
+# Ignore only heavy or generated artifacts
+results/logs.txt
+
+# OS files
+.DS_Store
+Thumbs.db

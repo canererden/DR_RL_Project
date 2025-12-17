@@ -1,0 +1,20 @@
+
+\begin{table}[htbp]
+    \caption{Performance Comparison (FLOPs Reduction: \~41.5\%)}
+    \label{tab:main_results}
+    \centering
+    \resizebox{\columnwidth}{!}{
+    \begin{tabular}{lcccc}
+        \toprule
+        \textbf{Method} & \textbf{Wiki-103} & \textbf{PTB} & \textbf{BookCorpus} & \textbf{FLOPs} \\
+         & (PPL) $\downarrow$ & (PPL) $\downarrow$ & (PPL) $\downarrow$ & ($\times 10^9$) \\
+        \midrule
+        Full-Rank \cite{vaswani2017attention} & 23.4 & 45.2 & 28.7 & 8.2 \\
+        Fixed Low-Rank \cite{wang2020linformer} & 26.1 & 48.9 & 31.5 & 4.9 \\
+        Adaptive SVD \cite{yang2021adaptive} & 25.3 & 47.6 & 30.2 & 5.3 \\
+        Random Rank & 27.8 & 51.3 & 33.1 & 5.1 \\
+        \textbf{DR-RL (Ours)} & \textbf{24.7} & \textbf{46.5} & \textbf{29.8} & \textbf{4.8} \\
+        \bottomrule
+    \end{tabular}
+    }
+\end{table}

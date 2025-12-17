@@ -1,0 +1,18 @@
+
+\begin{table}[htbp]
+    \caption{Ablation Results on Wikitext-103}
+    \label{tab:ablation}
+    \centering
+    \small
+    \begin{tabularx}{\columnwidth}{l c c >{\raggedright\arraybackslash}X}
+        \toprule
+        \textbf{Variant} & \textbf{PPL} & \textbf{FLOPs} & \textbf{Impact Analysis} \\
+         & & ($\times 10^9$) & \\
+        \midrule
+        \textbf{Full DR-RL} & 24.7 & 4.8 & \textbf{Optimal Trade-off} \\
+        w/o RL (Fixed Policy) & 26.2 & 5.1 & Lack of adaptation hurts accuracy \\
+        w/o Perturbation & 25.9 & 4.7 & Unstable updates degrade fidelity \\
+        w/o Reward Shaping & 25.3 & 5.3 & Fails to minimize computation \\
+        \bottomrule
+    \end{tabularx}
+\end{table}
