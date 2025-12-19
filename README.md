@@ -3,7 +3,8 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-orange)](https://pytorch.org/)
-[![Status](https://img.shields.io/badge/Status-Research_Prototype-green)]()
+[![arXiv](https://img.shields.io/badge/arXiv-2512.14925-b31b1b.svg)](https://arxiv.org/abs/2512.15973)
+
 
 > Official PyTorch implementation of the paper: **"Dynamic Rank Reinforcement Learning for Adaptive Low-Rank Multi-Head Self-Attention in Large Language Models"**
 
@@ -130,7 +131,9 @@ If you use this code in your research, please cite our paper:
 @article{erden2025drrl,
   title={Dynamic Rank Reinforcement Learning for Adaptive Low-Rank Multi-Head Self-Attention in Large Language Models},
   author={Erden, Caner},
-  journal={arXiv preprint},
+  journal={arXiv preprint arXiv:2512.15973},
+  volume={arXiv:2512.15973v1},
+  url={https://arxiv.org/abs/2512.15973},
   year={2025}
 }
 
