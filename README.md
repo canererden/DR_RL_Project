@@ -111,7 +111,7 @@ The core optimization is driven by the reward function R_t:
 
 $$ R_t = \alpha \cdot \text{sim}(\mathbf{A}*{\text{full}}, \mathbf{A}*{r_t}) - \beta \cdot \text{FLOPs}(r_t) - \gamma \cdot |\Delta \mathbf{A}|_F $$
 
-Where \|\Delta \mathbf{A}\|_F is bounded by the tail energy of singular values:
+Where $$\|\Delta \mathbf{A}\|_F$$ is bounded by the tail energy of singular values:
 
 $$ |\Delta \mathbf{A}|*F \approx \sqrt{\sum*{k=r+1}^{r'} \sigma_k^2} $$
 
