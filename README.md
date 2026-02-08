@@ -8,17 +8,6 @@
 
 > Official PyTorch implementation of the paper: **"Dynamic Rank Reinforcement Learning for Adaptive Low-Rank Multi-Head Self-Attention in Large Language Models"**
 
-## Abstract
-
-Large Language Models (LLMs) suffer from quadratic computational complexity in their Multi-Head Self-Attention (MHSA) mechanisms. Traditional low-rank approximations rely on static rank assumptions, failing to capture the dynamic linguistic complexity of different input sequences.
-
-**DR-RL** is a novel framework that bridges the gap between theoretical rigor and adaptive efficiency. It formulates rank selection as a sequential decision-making problem, optimized via a **Transformer-based Reinforcement Learning agent**. The framework leverages **Online Matrix Perturbation Theory** to guarantee stability during rank transitions, ensuring that efficiency gains do not compromise model fidelity.
-
-Key achievements:
-* **~40% FLOPs Reduction** in long-sequence regimes ($L > 4096$).
-* **Pareto-Optimal Performance:** Matches full-rank perplexity with significantly lower computational cost.
-* **Mathematically Grounded:** Rank updates are constrained by spectral perturbation bounds.
-
 ## Architecture
 
 The framework consists of three core components integrated into the Transformer architecture:
